@@ -5,20 +5,18 @@ on:
     branches:
       - main
 
-  jobs:
-    test:
-      runs-on: ubuntu-latest
+jobs:
+  test:
+    runs-on: ubuntu-latest
 
-      steps:
-        - name: Récupération du code
-          uses: actions/checkout@v3
+    steps:
+      - name: Récupération du code
+        uses: actions/checkout@v3
 
-        - name: Installation PHP 
-          uses: shivammathur/setup-php@v2
-          with: 
-            php-version: '8.1'
+      - name: Installation PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
 
-         - name: Vérification syntaxe PHP
-           run: php -l index.php
-
- 
+      - name: Vérification syntaxe PHP
+        run: php -l index.php
