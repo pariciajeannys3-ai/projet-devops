@@ -18,7 +18,7 @@ on:
           with: 
             php-version: '8.1'
 
-         -name: Vérification syntaxe PHP
+         - name: Vérification syntaxe PHP
           run: php -l index.php
 
  
