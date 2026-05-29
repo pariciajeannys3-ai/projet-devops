@@ -19,6 +19,6 @@ on:
             php-version: '8.1'
 
          - name: Vérification syntaxe PHP
-          run: php -l index.php
+           run: php -l index.php
 
  
